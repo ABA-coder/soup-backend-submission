@@ -8,13 +8,26 @@ The generated [EVIDENCE_INDEX.md](EVIDENCE_INDEX.md) lists **every** chaos/load 
 
 The authoring host is Windows 11, Python 3.12.14, SQLite 3.53.1, with 12 logical CPUs reported. The tests use a real loopback HTTP server, separate OS worker processes, local filesystem SQLite, and synthetic 20-60 ms jobs. No Linux distribution or Docker runtime was available. Thus **zero Linux SIGKILL runs and zero Docker startup runs were executed here**. The supplied Linux harness and CI workflow need to be run on an appropriate machine before treating that part of the brief as verified.
 
+There were **three experiment invocations: one invalid/failed chaos run, one completed chaos run, and one completed load run**. There were **three pytest invocations**, all passing (14, 15, and 15 tests). No additional seeds or unreported experiments were run.
+
+| Completed experiment | Final outcomes | Attempts / effects | Request evidence |
+|---|---|---|---|
+| Chaos: 10,000 jobs, eight workers, seed 1, 398.125 s | 7,815 succeeded; 218 deliberately failed; 1,967 cancelled; zero queued/running | 8,364 attempts; 8,033 effects; 303 jobs retried | 195 kills, 94 with an observed claim; 5,000 repeated POSTs; 2,000 cancel requests; 153 HTTP 503s |
+| Load: 3,000 creates offered at 100 RPS, eight workers, seed 3, 85.672 s to drain/check | 2,918 succeeded; 82 deliberately failed; zero queued/running | 3,066 attempts; 3,000 effects; 60 jobs retried despite no kills | 83 of 3,000 initial POSTs returned 503 (2.77%); 84 total 503s including retries; initial-POST p95 3,563 ms, p99 5,922 ms |
+
+Both completed runs passed every reconciliation invariant: all input keys present, one matching effect per succeeded/failed job, zero per cancellation, no duplicate effects, no stuck running jobs, matching attempt/token data and intact SQLite integrity/foreign keys. The failed outcomes above are intentionally requested synthetic failures, not lost work.
+
+The load experiment schedules new POSTs over approximately 30 seconds with a maximum measured scheduling lag of 31 ms. Successful responses, including retries, finished about 34.9 seconds after submission began. At the first subsequent progress sample, **2,484 jobs were still queued**. The queue then drained, but that is not steady-state capacity at 100 RPS. The 60 retried jobs without any deliberate process kills show that storage contention can outlast the 1.5-second test lease. Fencing kept the result count correct while compute attempts repeated. This load run is POST-only, without cancellations or kills; a mixed sustained workload remains untested.
+
+In the retained load log, the `arrival_schedule` event's `elapsed_s` is the submission-phase duration, while other events use time since harness start. The final source renames that one metadata field to `workload_elapsed_s` to remove ambiguity; raw logs are unchanged. This metadata-only change was not used to rerun or replace the recorded measurements. Each experiment's original source is preserved and hash-verified under its `source/` directory.
+
 ## Failed experiment and correction
 
 The initial chaos invocation was deliberately aborted at about 79 seconds. Every sampled killed-worker claim was empty even while work was running. Inspection found that `Popen.pid` pointed to the Windows virtual-environment redirector while workers reported a different interpreter PID. That made the experiment's kill targeting/coverage invalid; the apparent absence of lost work could not count as evidence. The API was manually stopped to force the run to fail and shut down. `intervention.json` documents the intervention and its reason. The recorded connection failures after that point were induced by stopping the API, not an unexplained queue failure.
 
 The correction follows Python's own Windows multiprocessing launcher approach: directly launch the base interpreter with `__PYVENV_LAUNCHER__` set to the venv executable. A regression test asserts that a child's reported PID is the PID being killed. The harness now checks worker identities before loading jobs, and records whether each chosen victim had an observed active claim. The replacement mechanism uses the same corrected launcher. The invalid run's earlier 503 responses remain meaningful evidence of contention, but its kill count is not credited as valid chaos coverage.
 
-The run was being stopped while the harness source was updated; Python's traceback source-line rendering therefore refers to some newer lines. The original start record preserves the old source hashes. The original JSON events and request logs are retained unchanged.
+The run was being stopped while the harness source was updated; Python's traceback source-line rendering therefore refers to some newer lines. The original start record preserves the old source hashes. The pre-fix source was recovered from the recorded edits, and every recovered file's SHA-256 was verified against that initial record; it is retained in that run's `source/` directory. The original JSON events and request logs are retained unchanged.
 
 ## Silent failures: protection and check
 
@@ -35,7 +48,7 @@ The run was being stopped while the harness source was updated; Python's traceba
 
 10,000 inputs are a workload size, not a proof bound. Seeds select workload/victims but cannot enumerate thread or process schedules. Process termination does not simulate a machine power cut or a storage controller lying about `fsync`. The targeted transaction-boundary tests exercise rollback and lost completion acknowledgement; they do not prove every disk-failure path. The large harness keeps the API/database host alive and does not crash the entire host. No disk-full/corruption, network partition, multi-host clocks, malicious clients, production training workload, external side-effect protocol, backup restoration or long-duration soak was tested. The clock tests use controlled injection, not real NTP changes. Health only checks database readability, not worker progress.
 
-The first unit invocation passed 14 tests; the PID regression test increased the suite to 15. The full transcript retains a Starlette deprecation warning about the currently supported `httpx` TestClient adapter. The real HTTP harness also uses `httpx`, independently of TestClient. A warning is not represented as an unqualified clean run.
+The first unit invocation passed 14 tests; the PID regression test increased the suite to 15. A third invocation after removing three unused imports also passed all 15. Those import removals do not change the service's storage/worker behavior; source hashes distinguish the versions. The full transcript retains a Starlette deprecation warning about the currently supported `httpx` TestClient adapter. The real HTTP harness also uses `httpx`, independently of TestClient. A warning is not represented as an unqualified clean run.
 
 ## Fix first
 

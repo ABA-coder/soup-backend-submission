@@ -1,0 +1,2 @@
+{"event": "worker_started", "pid": 23520, "worker": "23520-86d1edeee8724de5860f9fd493d9b9f3", "lease_ms": 1500}
+{"event": "claimed", "pid": 23520, "job_id": 4123, "token": 1}

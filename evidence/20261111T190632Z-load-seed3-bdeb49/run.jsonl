@@ -1,0 +1,105 @@
+{"elapsed_s": 0.203, "event": "start", "arguments": {"jobs": 3000, "workers": 8, "seed": 3, "output": "evidence", "lease_ms": 1500, "timeout": 600, "duration_min": 20, "duration_max": 60, "mode": "load", "rate": 100.0}, "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]", "sqlite": "3.53.1", "platform": "Windows-11-10.0.26200-SP0", "cpu_count": 12, "source_sha256": {"queue_service\\api.py": "f06f1e0e9a17f7e18fa61b7cb5ec25c0081d49146d690807284c9943e70fc6ee", "queue_service\\processes.py": "43858044ac6c3cc44ef401900d9096b70140afa3c1ed7176712c75bef901a822", "queue_service\\storage.py": "6991acad01529ed074aedd2ed6d169a431f31f6670244a634a3ea897d003cac0", "queue_service\\supervisor.py": "3e02062928319dbae5cc878bb6c050aec1b65d73911d8d27d18d12d0b60fba51", "queue_service\\worker.py": "248bfab7a433704dc5ebd6631cf0f2f1b5dfd5547461c4f9e16880a53162e3ec", "queue_service\\__init__.py": "95281839da1ba455636c1e41d2540bfa5cc465595446a07093c437b84d01ad12", "harness\\chaos.py": "04dcf9a476034733d649bb08c980e7ef50569c22bab76c10a6a8c7b67f46de33", "harness\\index_evidence.py": "936707c92b5e5429ea546dd054349e228b1c7ab5c305e0bd04e7c996e34da13a", "harness\\run_tests.py": "d4a0a0103a51decc51cb30c8a891485a467f7bb8c57fa6a9866922d0f4ca8ae3", "harness\\__init__.py": "76d25c65025abb9f1bdaf912fa139e117728c2cecb65211c7e3083a7c4965f71", "tests\\test_correctness.py": "602fe55dd02697e5e0fde0eb104d723aa77b9b97e783abbccc3c62db49421ad7"}, "kill_method": "Windows TerminateProcess"}
+{"elapsed_s": 1.875, "event": "worker_pids_verified", "pids": [28100, 14928, 23320, 16448, 17264, 26772, 20164, 7980]}
+{"elapsed_s": 6.875, "event": "progress", "known_keys": 460, "states": {"failed": 2, "queued": 409, "running": 4, "succeeded": 46}, "kills": 0}
+{"elapsed_s": 7.797, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-2", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 7.797, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 7.922, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-18", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 7.922, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-21", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 8.015, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-33", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 8.031, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-23", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 8.031, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-38", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 8.125, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-39", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 8.359, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-62", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 8.375, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-64", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 9.047, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-131", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 9.047, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-121", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 9.047, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-123", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 9.047, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-124", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 9.531, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-167", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 10.593, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-267", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 10.703, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-282", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 11.031, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-318", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 11.906, "event": "progress", "known_keys": 961, "states": {"failed": 2, "queued": 857, "running": 6, "succeeded": 98}, "kills": 0}
+{"elapsed_s": 12.859, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-501", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 12.968, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-521", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 13.656, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-585", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 13.859, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-611", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 14.0, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-620", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 14.172, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-651", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 14.843, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-716", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 14.984, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-720", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 14.984, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-717", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 15.39, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-769", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 15.39, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-748", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 15.39, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-757", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 15.406, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-773", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 15.578, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-791", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 16.125, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-849", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 16.484, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-884", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 16.593, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-890", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 16.812, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-912", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 16.906, "event": "progress", "known_keys": 1462, "states": {"failed": 2, "queued": 1330, "running": 3, "succeeded": 128}, "kills": 0}
+{"elapsed_s": 18.015, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1030", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 18.047, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1036", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 18.109, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1040", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 18.406, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1073", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 18.968, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1118", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 19.687, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1198", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 20.047, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1224", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 20.375, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1258", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 20.687, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1294", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 20.812, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1304", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 20.843, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1305", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 21.484, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1372", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 21.5, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1373", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 21.906, "event": "progress", "known_keys": 1966, "states": {"failed": 3, "queued": 1799, "running": 4, "succeeded": 161}, "kills": 0}
+{"elapsed_s": 22.312, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1457", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 22.453, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1478", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 22.781, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1498", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 22.875, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1514", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 23.906, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1617", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 23.906, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1030", "status": 503, "error": null, "attempt": 1}
+{"elapsed_s": 24.734, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1695", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 24.734, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1685", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 24.843, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1700", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 24.953, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1712", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 25.172, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1736", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 25.609, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1771", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 25.937, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1816", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 25.968, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1811", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 26.281, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1861", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 26.64, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1894", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 26.64, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1893", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 26.75, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1897", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 26.906, "event": "progress", "known_keys": 2464, "states": {"failed": 3, "queued": 2275, "running": 4, "succeeded": 182}, "kills": 0}
+{"elapsed_s": 26.953, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-1932", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 27.953, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-2026", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 29.312, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-2150", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 29.734, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-2202", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 30.515, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-2287", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 30.781, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-2309", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 31.218, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-2359", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 31.906, "event": "progress", "known_keys": 2961, "states": {"failed": 5, "queued": 2738, "running": 3, "succeeded": 216}, "kills": 0}
+{"elapsed_s": 31.968, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-2442", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 32.078, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-2434", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 32.187, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-2445", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 32.437, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-2481", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 32.547, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-2486", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 32.609, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-2489", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 33.328, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-2546", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 34.031, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-2633", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 35.265, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-2755", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 35.468, "event": "request_retry", "path": "/jobs", "key": "seed-3-job-2787", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 34.92200000002049, "event": "arrival_schedule", "target_rps": 100.0, "max_lag_ms": 31.000000017229468}
+{"elapsed_s": 36.812, "event": "submissions_done", "keys": 3000}
+{"elapsed_s": 36.922, "event": "progress", "known_keys": 3000, "states": {"failed": 14, "queued": 2484, "running": 7, "succeeded": 495}, "kills": 0}
+{"elapsed_s": 41.922, "event": "progress", "known_keys": 3000, "states": {"failed": 23, "queued": 2184, "running": 8, "succeeded": 785}, "kills": 0}
+{"elapsed_s": 46.937, "event": "progress", "known_keys": 3000, "states": {"failed": 29, "queued": 1919, "running": 8, "succeeded": 1044}, "kills": 0}
+{"elapsed_s": 51.937, "event": "progress", "known_keys": 3000, "states": {"failed": 35, "queued": 1627, "running": 7, "succeeded": 1331}, "kills": 0}
+{"elapsed_s": 56.953, "event": "progress", "known_keys": 3000, "states": {"failed": 41, "queued": 1386, "running": 8, "succeeded": 1565}, "kills": 0}
+{"elapsed_s": 61.984, "event": "progress", "known_keys": 3000, "states": {"failed": 49, "queued": 1130, "running": 8, "succeeded": 1813}, "kills": 0}
+{"elapsed_s": 67.0, "event": "progress", "known_keys": 3000, "states": {"failed": 58, "queued": 870, "running": 7, "succeeded": 2065}, "kills": 0}
+{"elapsed_s": 72.047, "event": "progress", "known_keys": 3000, "states": {"failed": 66, "queued": 621, "running": 8, "succeeded": 2305}, "kills": 0}
+{"elapsed_s": 77.047, "event": "progress", "known_keys": 3000, "states": {"failed": 70, "queued": 369, "running": 7, "succeeded": 2554}, "kills": 0}
+{"elapsed_s": 82.047, "event": "progress", "known_keys": 3000, "states": {"failed": 78, "queued": 135, "running": 7, "succeeded": 2780}, "kills": 0}
+{"elapsed_s": 85.672, "event": "result", "jobs": 3000, "states": {"failed": 82, "succeeded": 2918}, "effects": 3000, "attempts": 3066, "jobs_retried": 60, "kills": 0, "kills_with_observed_claim": 0, "accepted_cancels": 0, "late_cancels": 0, "http_statuses": {"201": 3000, "503": 84, "200": 23}, "request_retries": 84, "latency_ms": {"p50": 46.0, "p95": 3453.0, "p99": 5922.0, "max": 6046.0}, "invariants": "PASS"}

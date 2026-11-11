@@ -3,7 +3,6 @@ import argparse
 import os
 import signal
 import subprocess
-import sys
 import time
 
 from queue_service.storage import Store

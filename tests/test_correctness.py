@@ -1,9 +1,7 @@
 from concurrent.futures import ThreadPoolExecutor
 import multiprocessing
-from pathlib import Path
 import sqlite3
 import subprocess
-import sys
 import threading
 import time
 from unittest.mock import patch

@@ -1,0 +1,35 @@
+{"command": ["C:\\Users\\erken\\Documents\\Codex\\2026-11-11\\task-a-training-job-queue-service\\work\\venv\\Scripts\\python.exe", "-m", "pytest", "-vv"], "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"}
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\erken\Documents\Codex\2026-11-11\task-a-training-job-queue-service\work\venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\erken\Documents\Codex\2026-11-11\task-a-training-job-queue-service\outputs\soup-training-queue
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.16.0
+collecting ... collected 15 items
+
+tests/test_correctness.py::test_concurrent_idempotency_and_payload_conflict PASSED [  6%]
+tests/test_correctness.py::test_eight_simultaneous_claims_have_one_owner PASSED [ 13%]
+tests/test_correctness.py::test_expired_zombie_cannot_renew_or_finish_even_before_reclaim PASSED [ 20%]
+tests/test_correctness.py::test_worker_clock_skew_is_ignored_and_host_clock_jump_is_fenced PASSED [ 26%]
+tests/test_correctness.py::test_cancel_completion_order_is_explicit[cancel] PASSED [ 33%]
+tests/test_correctness.py::test_cancel_completion_order_is_explicit[complete] PASSED [ 40%]
+tests/test_correctness.py::test_real_cancel_complete_races_remain_consistent PASSED [ 46%]
+tests/test_correctness.py::test_isolation_hides_partial_effect_and_locks_other_writer PASSED [ 53%]
+tests/test_correctness.py::test_hard_kill_at_effect_transaction_boundary[False] PASSED [ 60%]
+tests/test_correctness.py::test_hard_kill_at_effect_transaction_boundary[True] PASSED [ 66%]
+tests/test_correctness.py::test_heartbeats_keep_a_long_job_owned PASSED  [ 73%]
+tests/test_correctness.py::test_launched_python_pid_is_the_process_we_kill PASSED [ 80%]
+tests/test_correctness.py::test_api_retry_defaults_errors_and_stable_pagination PASSED [ 86%]
+tests/test_correctness.py::test_failed_job_has_one_failure_effect PASSED [ 93%]
+tests/test_correctness.py::test_wrong_worker_and_token_cannot_publish PASSED [100%]
+
+============================== warnings summary ===============================
+..\..\work\venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\erken\Documents\Codex\2026-11-11\task-a-training-job-queue-service\work\venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 15 passed, 1 warning in 7.78s ========================
+
+EXIT_CODE=0

@@ -1,0 +1,7 @@
+{"event": "worker_started", "pid": 17076, "worker": "17076-5a659abec7564a6189d3d180c6871981", "lease_ms": 1500}
+{"event": "claimed", "pid": 17076, "job_id": 478, "token": 2}
+{"event": "finished", "pid": 17076, "job_id": 478, "token": 2}
+{"event": "claimed", "pid": 17076, "job_id": 481, "token": 2}
+{"event": "finished", "pid": 17076, "job_id": 481, "token": 2}
+{"event": "claimed", "pid": 17076, "job_id": 483, "token": 2}
+{"event": "finished", "pid": 17076, "job_id": 483, "token": 2}

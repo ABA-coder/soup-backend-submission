@@ -1,0 +1,16 @@
+To: team@trysoup.dev
+Subject: Re: Soup internship - Backend Engineer submission
+
+Hi Soup Team,
+
+I chose the Backend Engineer task. Attached is soup-backend-submission.zip, containing the source repository, a Git bundle with commit history, a one-page design note, the chaos harness, all raw experiment outputs (including the failed experiment), and the analysis/reflection.
+
+The corrected Windows chaos run completed 10,000 jobs with eight workers and 195 hard process terminations. Final reconciliation found no lost jobs, duplicate durable results, or jobs stuck in running. The targeted suite passes 15 tests. The report includes the separate 100-requests-per-second experiment and explains the DON'T SHIP verdict, including database contention and operational gaps.
+
+An important evidence limitation: the available machine had no Docker/Linux runtime. Windows TerminateProcess runs are explicitly identified; I am not claiming that the requested Linux SIGKILL or docker compose startup checks were executed. The Linux harness and CI workflow are included for reproduction. The initial PID-targeting experiment is retained as invalid/failed, with the correction explained.
+
+AI assistance and the verification performed are disclosed in AI_USAGE.md. README.md contains run instructions; REPORT.md and EVIDENCE_INDEX.md point to every result.
+
+Thank you for reviewing the submission.
+
+Best regards

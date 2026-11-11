@@ -202,7 +202,7 @@ class Experiment:
                     tasks.append(asyncio.create_task(self.post(client, key)))
                 await asyncio.gather(*tasks)
                 self.log('arrival_schedule', target_rps=self.args.rate, max_lag_ms=max(lags),
-                         elapsed_s=time.monotonic() - started)
+                         workload_elapsed_s=time.monotonic() - started)
             else:
                 await asyncio.gather(
                     *(self.creator(client, keys[i::16]) for i in range(16)), self.repeats(client)

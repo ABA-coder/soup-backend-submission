@@ -1,0 +1,4 @@
+{
+  "reason": "Operator stopped API to abort an invalid experiment: Windows virtualenv launcher PID differs from worker PID. Kills must target actual worker; preserve all raw output.",
+  "utc": "2026-11-11T18:59:14.7758377Z"
+}

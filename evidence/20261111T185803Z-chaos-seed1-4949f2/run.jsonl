@@ -1,0 +1,197 @@
+{"elapsed_s": 0.172, "event": "start", "arguments": {"jobs": 10000, "workers": 8, "seed": 1, "output": "evidence", "lease_ms": 1500, "timeout": 600, "duration_min": 20, "duration_max": 60, "mode": "chaos", "rate": 100}, "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]", "sqlite": "3.53.1", "platform": "Windows-11-10.0.26200-SP0", "cpu_count": 12, "source_sha256": {"queue_service\\api.py": "f06f1e0e9a17f7e18fa61b7cb5ec25c0081d49146d690807284c9943e70fc6ee", "queue_service\\storage.py": "6991acad01529ed074aedd2ed6d169a431f31f6670244a634a3ea897d003cac0", "queue_service\\supervisor.py": "835d3f5b61860a9dbfa48f0fafbbaafc2ec018ca4e471d28ece20d733424bf3c", "queue_service\\worker.py": "248bfab7a433704dc5ebd6631cf0f2f1b5dfd5547461c4f9e16880a53162e3ec", "queue_service\\__init__.py": "95281839da1ba455636c1e41d2540bfa5cc465595446a07093c437b84d01ad12", "harness\\chaos.py": "535caf4756261d95ea039598cd44d59b03cfd57b139707b43b27103730263442", "harness\\run_tests.py": "d4a0a0103a51decc51cb30c8a891485a467f7bb8c57fa6a9866922d0f4ca8ae3", "harness\\__init__.py": "76d25c65025abb9f1bdaf912fa139e117728c2cecb65211c7e3083a7c4965f71", "tests\\test_correctness.py": "099a824a084073020182846f837c4f03ad33766662d5625eaa94fbdfc9e95070"}, "kill_method": "Windows TerminateProcess"}
+{"elapsed_s": 3.453, "event": "worker_killed", "pid": 5716, "slot": 5, "jobs": [], "returncode": 1}
+{"elapsed_s": 5.406, "event": "worker_killed", "pid": 6988, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 6.609, "event": "progress", "known_keys": 289, "states": {"cancelled": 44, "failed": 3, "queued": 177, "running": 6, "succeeded": 61}, "kills": 2}
+{"elapsed_s": 7.375, "event": "worker_killed", "pid": 19940, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 7.578, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-25", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 7.578, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-21", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 7.594, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 7.89, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-60", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 8.156, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3514", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 8.484, "event": "request_retry", "path": "/jobs/36/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 9.437, "event": "worker_killed", "pid": 34344, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 11.437, "event": "worker_killed", "pid": 12456, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 11.594, "event": "progress", "known_keys": 623, "states": {"cancelled": 84, "failed": 4, "queued": 419, "running": 4, "succeeded": 112}, "kills": 5}
+{"elapsed_s": 12.969, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-207", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 13.328, "event": "worker_killed", "pid": 32380, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 13.64, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-21", "status": 503, "error": null, "attempt": 1}
+{"elapsed_s": 13.64, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-208", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 13.875, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-120", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 14.453, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1169", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 15.187, "event": "worker_killed", "pid": 7532, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 15.265, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-158", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 16.406, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1268", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 16.594, "event": "progress", "known_keys": 873, "states": {"cancelled": 141, "failed": 8, "queued": 525, "running": 4, "succeeded": 196}, "kills": 7}
+{"elapsed_s": 17.078, "event": "worker_killed", "pid": 5656, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 18.359, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1628", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 18.484, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-150", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 18.89, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-207", "status": 503, "error": null, "attempt": 1}
+{"elapsed_s": 18.89, "event": "worker_killed", "pid": 10432, "slot": 1, "jobs": [], "returncode": 1}
+{"elapsed_s": 19.437, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1347", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 20.078, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-6214", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 20.64, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-925", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 20.812, "event": "worker_killed", "pid": 25952, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 21.594, "event": "progress", "known_keys": 1302, "states": {"cancelled": 164, "failed": 9, "queued": 883, "running": 4, "succeeded": 243}, "kills": 10}
+{"elapsed_s": 22.984, "event": "worker_killed", "pid": 10844, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 23.094, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-665", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 24.937, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-223", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 25.047, "event": "worker_killed", "pid": 25252, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 25.734, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-165", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 26.015, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1891", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 26.156, "event": "request_retry", "path": "/jobs/874/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 26.625, "event": "progress", "known_keys": 1617, "states": {"cancelled": 202, "failed": 10, "queued": 1058, "running": 5, "succeeded": 342}, "kills": 12}
+{"elapsed_s": 26.625, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1692", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 27.203, "event": "worker_killed", "pid": 26172, "slot": 1, "jobs": [], "returncode": 1}
+{"elapsed_s": 27.859, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1745", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 28.859, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-665", "status": 503, "error": null, "attempt": 1}
+{"elapsed_s": 29.312, "event": "worker_killed", "pid": 9284, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 29.781, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-760", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 30.344, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1094", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 31.297, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-431", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 31.328, "event": "worker_killed", "pid": 17840, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 31.625, "event": "progress", "known_keys": 2140, "states": {"cancelled": 206, "failed": 10, "queued": 1544, "running": 4, "succeeded": 377}, "kills": 15}
+{"elapsed_s": 32.125, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1987", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 32.265, "event": "request_retry", "path": "/jobs/1061/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 33.312, "event": "worker_killed", "pid": 8056, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 33.765, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2932", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 34.109, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2014", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 34.797, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2634", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 35.328, "event": "worker_killed", "pid": 33796, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 35.781, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3282", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 36.672, "event": "progress", "known_keys": 2610, "states": {"cancelled": 249, "failed": 11, "queued": 1930, "running": 5, "succeeded": 415}, "kills": 17}
+{"elapsed_s": 37.219, "event": "worker_killed", "pid": 30188, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 37.219, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2940", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 38.14, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-917", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 38.25, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4167", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 38.703, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2001", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 39.203, "event": "worker_killed", "pid": 21552, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 39.625, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3216", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 40.156, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2187", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 41.156, "event": "worker_killed", "pid": 12720, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 41.703, "event": "progress", "known_keys": 3009, "states": {"cancelled": 332, "failed": 12, "queued": 2199, "running": 4, "succeeded": 463}, "kills": 20}
+{"elapsed_s": 42.984, "event": "worker_killed", "pid": 19540, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 43.172, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1359", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 44.656, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2360", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 44.828, "event": "worker_killed", "pid": 18636, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 46.344, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2235", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 46.703, "event": "progress", "known_keys": 3475, "states": {"cancelled": 396, "failed": 14, "queued": 2555, "running": 4, "succeeded": 506}, "kills": 22}
+{"elapsed_s": 46.859, "event": "worker_killed", "pid": 13968, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 48.953, "event": "worker_killed", "pid": 29732, "slot": 5, "jobs": [], "returncode": 1}
+{"elapsed_s": 50.453, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2493", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 50.672, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2424", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 50.672, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4202", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 50.797, "event": "worker_killed", "pid": 29056, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 51.719, "event": "progress", "known_keys": 3919, "states": {"cancelled": 407, "failed": 15, "queued": 2927, "running": 3, "succeeded": 568}, "kills": 25}
+{"elapsed_s": 52.703, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5895", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 52.75, "event": "worker_killed", "pid": 29780, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 53.734, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2284", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 54.531, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4465", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 54.656, "event": "worker_killed", "pid": 27796, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 55.234, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3296", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 56.719, "event": "progress", "known_keys": 4312, "states": {"cancelled": 413, "failed": 17, "queued": 3244, "running": 4, "succeeded": 635}, "kills": 27}
+{"elapsed_s": 56.734, "event": "request_retry", "path": "/jobs/2081/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 56.734, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4234", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 56.812, "event": "worker_killed", "pid": 9984, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 57.156, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2541", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 58.797, "event": "worker_killed", "pid": 14972, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 58.875, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3307", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 59.297, "event": "request_retry", "path": "/jobs/2124/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 59.656, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1330", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 59.797, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3918", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 60.859, "event": "worker_killed", "pid": 22356, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 61.719, "event": "progress", "known_keys": 4809, "states": {"cancelled": 447, "failed": 18, "queued": 3670, "running": 4, "succeeded": 671}, "kills": 30}
+{"elapsed_s": 61.797, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4833", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 62.703, "event": "worker_killed", "pid": 17548, "slot": 2, "jobs": [], "returncode": 1}
+{"elapsed_s": 62.719, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2773", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 63.469, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7452", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 64.672, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3616", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 64.828, "event": "worker_killed", "pid": 31772, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 65.656, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3016", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 65.656, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3918", "status": 503, "error": null, "attempt": 1}
+{"elapsed_s": 66.687, "event": "worker_killed", "pid": 30768, "slot": 5, "jobs": [], "returncode": 1}
+{"elapsed_s": 66.734, "event": "progress", "known_keys": 5219, "states": {"cancelled": 461, "failed": 20, "queued": 3989, "running": 6, "succeeded": 743}, "kills": 33}
+{"elapsed_s": 67.703, "event": "request_retry", "path": "/jobs/2309/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 68.687, "event": "worker_killed", "pid": 10488, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 70.5, "event": "worker_killed", "pid": 17364, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 71.25, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3918", "status": 0, "error": "ReadError('')", "attempt": 2}
+{"elapsed_s": 71.25, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4079", "status": 0, "error": "ReadError('')", "attempt": 0}
+{"elapsed_s": 71.25, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3910", "status": 0, "error": "ReadError('')", "attempt": 0}
+{"elapsed_s": 71.25, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5194", "status": 0, "error": "ReadError('')", "attempt": 0}
+{"elapsed_s": 71.25, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7591", "status": 0, "error": "ReadError('')", "attempt": 0}
+{"elapsed_s": 71.25, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9545", "status": 0, "error": "ReadError('')", "attempt": 0}
+{"elapsed_s": 71.25, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7628", "status": 0, "error": "ReadError('')", "attempt": 0}
+{"elapsed_s": 71.25, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-6002", "status": 0, "error": "ReadError('')", "attempt": 0}
+{"elapsed_s": 71.25, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9492", "status": 0, "error": "ReadError('')", "attempt": 0}
+{"elapsed_s": 71.25, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4176", "status": 0, "error": "ReadError('')", "attempt": 0}
+{"elapsed_s": 71.25, "event": "request_retry", "path": "/jobs/2525/cancel", "key": null, "status": 0, "error": "ReadError('')", "attempt": 0}
+{"elapsed_s": 71.25, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5795", "status": 0, "error": "ReadError('')", "attempt": 0}
+{"elapsed_s": 71.25, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5665", "status": 0, "error": "ReadError('')", "attempt": 0}
+{"elapsed_s": 71.265, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5163", "status": 0, "error": "ReadError('')", "attempt": 0}
+{"elapsed_s": 71.265, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4597", "status": 0, "error": "ReadError('')", "attempt": 0}
+{"elapsed_s": 71.265, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3784", "status": 0, "error": "ReadError('')", "attempt": 0}
+{"elapsed_s": 71.265, "event": "request_retry", "path": "/jobs/2309/cancel", "key": null, "status": 0, "error": "ReadError('')", "attempt": 1}
+{"elapsed_s": 71.265, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3749", "status": 0, "error": "ReadError('')", "attempt": 0}
+{"elapsed_s": 71.265, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4253", "status": 0, "error": "ReadError('')", "attempt": 0}
+{"elapsed_s": 71.719, "event": "progress", "known_keys": 5665, "states": {"cancelled": 493, "failed": 22, "queued": 4342, "running": 5, "succeeded": 803}, "kills": 35}
+{"elapsed_s": 72.656, "event": "worker_killed", "pid": 34408, "slot": 5, "jobs": [], "returncode": 1}
+{"elapsed_s": 73.375, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9492", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 1}
+{"elapsed_s": 73.375, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9545", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 1}
+{"elapsed_s": 73.375, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7628", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 1}
+{"elapsed_s": 73.375, "event": "request_retry", "path": "/jobs/2525/cancel", "key": null, "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 1}
+{"elapsed_s": 73.375, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4079", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 1}
+{"elapsed_s": 73.375, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-6002", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 1}
+{"elapsed_s": 73.375, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7591", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 1}
+{"elapsed_s": 73.375, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5795", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 1}
+{"elapsed_s": 73.375, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3910", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 1}
+{"elapsed_s": 73.39, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5665", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 1}
+{"elapsed_s": 73.39, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4253", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 1}
+{"elapsed_s": 73.39, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4176", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 1}
+{"elapsed_s": 73.39, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4597", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 1}
+{"elapsed_s": 73.39, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5163", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 1}
+{"elapsed_s": 73.39, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3784", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 1}
+{"elapsed_s": 73.39, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5194", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 1}
+{"elapsed_s": 73.39, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3749", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 1}
+{"elapsed_s": 73.406, "event": "request_retry", "path": "/jobs/2309/cancel", "key": null, "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 73.5, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3918", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 74.64, "event": "worker_killed", "pid": 14432, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 75.515, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4079", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 75.515, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7591", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 75.515, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9492", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 75.515, "event": "request_retry", "path": "/jobs/2525/cancel", "key": null, "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 75.515, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-6002", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 75.531, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3910", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 75.531, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7628", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 75.531, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5163", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 75.531, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9545", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 75.531, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4253", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 75.531, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5665", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 75.547, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4176", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 75.547, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3784", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 75.547, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4597", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 75.547, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5795", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 75.547, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3749", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 75.547, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5194", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 2}
+{"elapsed_s": 75.64, "event": "request_retry", "path": "/jobs/2309/cancel", "key": null, "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 75.937, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3918", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 4}
+{"elapsed_s": 76.765, "event": "progress", "known_keys": 5665, "states": {"cancelled": 493, "failed": 31, "queued": 4072, "running": 8, "succeeded": 1061}, "kills": 37}
+{"elapsed_s": 76.812, "event": "worker_killed", "pid": 32236, "slot": 2, "jobs": [], "returncode": 1}
+{"elapsed_s": 77.765, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4079", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 77.765, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5163", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 77.765, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7628", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 77.765, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3910", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 77.765, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5194", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 77.765, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4597", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 77.781, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7591", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 77.781, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3749", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 77.781, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5665", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 77.781, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3784", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 77.781, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4253", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 77.781, "event": "request_retry", "path": "/jobs/2525/cancel", "key": null, "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 77.781, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4176", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 77.797, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9545", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 77.797, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9492", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 77.797, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-6002", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 77.797, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5795", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 3}
+{"elapsed_s": 78.094, "event": "request_retry", "path": "/jobs/2309/cancel", "key": null, "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 4}
+{"elapsed_s": 78.765, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3918", "status": 0, "error": "ConnectError('All connection attempts failed')", "attempt": 5}
+{"elapsed_s": 78.781, "event": "FAILED", "error": "AssertionError('POST seed-1-job-3918: 0 None')", "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\erken\\Documents\\Codex\\2026-11-11\\task-a-training-job-queue-service\\outputs\\soup-training-queue\\harness\\chaos.py\", line 334, in execute\n    for _ in range(150):\n  File \"C:\\Users\\erken\\Documents\\Codex\\2026-11-11\\task-a-training-job-queue-service\\outputs\\soup-training-queue\\harness\\chaos.py\", line 206, in submit\n    else:\n        ^\n  File \"C:\\Users\\erken\\Documents\\Codex\\2026-11-11\\task-a-training-job-queue-service\\outputs\\soup-training-queue\\harness\\chaos.py\", line 128, in creator\n    for key in keys:\n                 ^^^^\n  File \"C:\\Users\\erken\\Documents\\Codex\\2026-11-11\\task-a-training-job-queue-service\\outputs\\soup-training-queue\\harness\\chaos.py\", line 117, in post\n    if status not in (200, 201):\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: POST seed-1-job-3918: 0 None\n"}

@@ -1,0 +1,6 @@
+{"event": "worker_started", "pid": 16524, "worker": "16524-aa137bf764fc418c9a54d4c6cc65e412", "lease_ms": 1500}
+{"event": "claimed", "pid": 16524, "job_id": 1132, "token": 1}
+{"event": "fenced", "pid": 16524, "job_id": 1132, "token": 1}
+{"event": "claimed", "pid": 16524, "job_id": 1134, "token": 2}
+{"event": "finished", "pid": 16524, "job_id": 1134, "token": 2}
+{"event": "claimed", "pid": 16524, "job_id": 1140, "token": 1}

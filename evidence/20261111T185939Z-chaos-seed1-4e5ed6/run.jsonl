@@ -1,0 +1,430 @@
+{"elapsed_s": 0.172, "event": "start", "arguments": {"jobs": 10000, "workers": 8, "seed": 1, "output": "evidence", "lease_ms": 1500, "timeout": 600, "duration_min": 20, "duration_max": 60, "mode": "chaos", "rate": 100}, "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]", "sqlite": "3.53.1", "platform": "Windows-11-10.0.26200-SP0", "cpu_count": 12, "source_sha256": {"queue_service\\api.py": "f06f1e0e9a17f7e18fa61b7cb5ec25c0081d49146d690807284c9943e70fc6ee", "queue_service\\processes.py": "43858044ac6c3cc44ef401900d9096b70140afa3c1ed7176712c75bef901a822", "queue_service\\storage.py": "6991acad01529ed074aedd2ed6d169a431f31f6670244a634a3ea897d003cac0", "queue_service\\supervisor.py": "ec2b6b5e5cb6d7b928aecd43c0298aaa8adda3fb7d8e865eab406813d2c0c8bb", "queue_service\\worker.py": "248bfab7a433704dc5ebd6631cf0f2f1b5dfd5547461c4f9e16880a53162e3ec", "queue_service\\__init__.py": "95281839da1ba455636c1e41d2540bfa5cc465595446a07093c437b84d01ad12", "harness\\chaos.py": "04dcf9a476034733d649bb08c980e7ef50569c22bab76c10a6a8c7b67f46de33", "harness\\run_tests.py": "d4a0a0103a51decc51cb30c8a891485a467f7bb8c57fa6a9866922d0f4ca8ae3", "harness\\__init__.py": "76d25c65025abb9f1bdaf912fa139e117728c2cecb65211c7e3083a7c4965f71", "tests\\test_correctness.py": "41ef94663c5681701bd0cde8be5d6bb64acc11bf94ecbe9641564f1ee81ce35c"}, "kill_method": "Windows TerminateProcess"}
+{"elapsed_s": 1.891, "event": "worker_pids_verified", "pids": [26900, 19796, 22056, 14728, 5412, 23812, 32268, 29644]}
+{"elapsed_s": 3.703, "event": "worker_killed", "pid": 23812, "slot": 5, "jobs": [], "returncode": 1}
+{"elapsed_s": 5.672, "event": "worker_killed", "pid": 5412, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 6.922, "event": "progress", "known_keys": 350, "states": {"cancelled": 3, "failed": 3, "queued": 264, "running": 4, "succeeded": 77}, "kills": 2}
+{"elapsed_s": 7.594, "event": "worker_killed", "pid": 29644, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 7.984, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-14", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 9.469, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-64", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 9.547, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-538", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 9.672, "event": "worker_killed", "pid": 20128, "slot": 4, "jobs": [126], "returncode": 1}
+{"elapsed_s": 10.5, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3514", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 10.594, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-227", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 11.047, "event": "request_retry", "path": "/jobs/59/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 11.187, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-24", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 11.656, "event": "worker_killed", "pid": 9212, "slot": 7, "jobs": [149], "returncode": 1}
+{"elapsed_s": 11.937, "event": "progress", "known_keys": 765, "states": {"cancelled": 12, "failed": 4, "queued": 610, "running": 2, "succeeded": 138}, "kills": 5}
+{"elapsed_s": 13.312, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-793", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 13.5, "event": "worker_killed", "pid": 25244, "slot": 7, "jobs": [187], "returncode": 1}
+{"elapsed_s": 14.891, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-332", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 15.312, "event": "worker_killed", "pid": 14728, "slot": 3, "jobs": [182], "returncode": 1}
+{"elapsed_s": 16.25, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-955", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 16.359, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-861", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 16.922, "event": "progress", "known_keys": 1283, "states": {"cancelled": 12, "failed": 4, "queued": 1090, "running": 2, "succeeded": 176}, "kills": 7}
+{"elapsed_s": 17.203, "event": "worker_killed", "pid": 4432, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 19.047, "event": "worker_killed", "pid": 19796, "slot": 1, "jobs": [228], "returncode": 1}
+{"elapsed_s": 19.406, "event": "request_retry", "path": "/jobs/181/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 19.5, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-447", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 20.937, "event": "worker_killed", "pid": 17976, "slot": 4, "jobs": [226], "returncode": 1}
+{"elapsed_s": 21.047, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2037", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 21.937, "event": "progress", "known_keys": 1765, "states": {"cancelled": 49, "failed": 7, "queued": 1480, "running": 4, "succeeded": 226}, "kills": 10}
+{"elapsed_s": 22.094, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-254", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 22.953, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-492", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 23.125, "event": "worker_killed", "pid": 1732, "slot": 7, "jobs": [302], "returncode": 1}
+{"elapsed_s": 23.969, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-307", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 24.094, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1337", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 25.234, "event": "worker_killed", "pid": 26900, "slot": 0, "jobs": [322], "returncode": 1}
+{"elapsed_s": 25.391, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-447", "status": 503, "error": null, "attempt": 1}
+{"elapsed_s": 25.391, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2193", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 25.5, "event": "request_retry", "path": "/jobs/392/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 25.766, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1099", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 26.906, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3462", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 26.937, "event": "progress", "known_keys": 2101, "states": {"cancelled": 74, "failed": 10, "queued": 1704, "running": 1, "succeeded": 313}, "kills": 12}
+{"elapsed_s": 27.031, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2037", "status": 503, "error": null, "attempt": 1}
+{"elapsed_s": 27.406, "event": "worker_killed", "pid": 3404, "slot": 1, "jobs": [375], "returncode": 1}
+{"elapsed_s": 27.734, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1464", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 27.953, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3604", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 29.516, "event": "worker_killed", "pid": 32268, "slot": 6, "jobs": [426], "returncode": 1}
+{"elapsed_s": 29.922, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2146", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 31.516, "event": "worker_killed", "pid": 5908, "slot": 4, "jobs": [444], "returncode": 1}
+{"elapsed_s": 31.781, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2125", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 31.922, "event": "progress", "known_keys": 2465, "states": {"cancelled": 136, "failed": 10, "queued": 1936, "running": 6, "succeeded": 378}, "kills": 15}
+{"elapsed_s": 32.812, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3632", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 32.969, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3462", "status": 503, "error": null, "attempt": 1}
+{"elapsed_s": 33.531, "event": "worker_killed", "pid": 28744, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 33.625, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2009", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 33.625, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1087", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 34.719, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-974", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 35.547, "event": "worker_killed", "pid": 13644, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 36.703, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2241", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 36.937, "event": "progress", "known_keys": 2941, "states": {"cancelled": 282, "failed": 11, "queued": 2235, "running": 3, "succeeded": 411}, "kills": 17}
+{"elapsed_s": 37.469, "event": "worker_killed", "pid": 17076, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 37.594, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1080", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 37.703, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1419", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 38.625, "event": "request_retry", "path": "/jobs/1148/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 39.469, "event": "worker_killed", "pid": 12336, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 39.531, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1087", "status": 503, "error": null, "attempt": 1}
+{"elapsed_s": 39.656, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3974", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 39.984, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3975", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 41.0, "event": "request_retry", "path": "/jobs/1571/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 41.422, "event": "worker_killed", "pid": 17056, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 41.922, "event": "progress", "known_keys": 3461, "states": {"cancelled": 312, "failed": 12, "queued": 2691, "running": 5, "succeeded": 442}, "kills": 20}
+{"elapsed_s": 43.219, "event": "worker_killed", "pid": 28612, "slot": 6, "jobs": [555], "returncode": 1}
+{"elapsed_s": 43.328, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2062", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 43.422, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3690", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 43.578, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4384", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 44.0, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7246", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 44.672, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3941", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 45.109, "event": "worker_killed", "pid": 31872, "slot": 3, "jobs": [573], "returncode": 1}
+{"elapsed_s": 45.656, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4397", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 46.344, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5220", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 46.797, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3337", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 46.922, "event": "progress", "known_keys": 3851, "states": {"cancelled": 399, "failed": 13, "queued": 2940, "running": 6, "succeeded": 493}, "kills": 22}
+{"elapsed_s": 47.109, "event": "worker_killed", "pid": 4684, "slot": 4, "jobs": [600], "returncode": 1}
+{"elapsed_s": 47.781, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4150", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 49.125, "event": "request_retry", "path": "/jobs/2031/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 49.234, "event": "worker_killed", "pid": 1292, "slot": 5, "jobs": [], "returncode": 1}
+{"elapsed_s": 49.734, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2831", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 49.937, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2168", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 50.531, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4711", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 51.109, "event": "worker_killed", "pid": 30240, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 51.937, "event": "progress", "known_keys": 4224, "states": {"cancelled": 462, "failed": 15, "queued": 3203, "running": 2, "succeeded": 543}, "kills": 25}
+{"elapsed_s": 52.766, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5165", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 53.047, "event": "worker_killed", "pid": 23628, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 53.078, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5109", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 54.156, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4278", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 54.687, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5346", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 54.781, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3195", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 55.0, "event": "worker_killed", "pid": 25428, "slot": 0, "jobs": [692], "returncode": 1}
+{"elapsed_s": 55.203, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3657", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 55.797, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-6020", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 56.484, "event": "request_retry", "path": "/jobs/2508/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 56.922, "event": "progress", "known_keys": 4575, "states": {"cancelled": 521, "failed": 17, "queued": 3438, "running": 5, "succeeded": 595}, "kills": 27}
+{"elapsed_s": 57.109, "event": "worker_killed", "pid": 23548, "slot": 7, "jobs": [741], "returncode": 1}
+{"elapsed_s": 58.625, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2424", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 59.141, "event": "worker_killed", "pid": 2672, "slot": 4, "jobs": [766], "returncode": 1}
+{"elapsed_s": 61.172, "event": "worker_killed", "pid": 10052, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 61.875, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4390", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 61.922, "event": "progress", "known_keys": 4910, "states": {"cancelled": 599, "failed": 19, "queued": 3629, "running": 5, "succeeded": 659}, "kills": 30}
+{"elapsed_s": 62.234, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5719", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 63.0, "event": "worker_killed", "pid": 22056, "slot": 2, "jobs": [838], "returncode": 1}
+{"elapsed_s": 65.125, "event": "worker_killed", "pid": 33836, "slot": 3, "jobs": [872], "returncode": 1}
+{"elapsed_s": 65.297, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3243", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 65.406, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3897", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 66.281, "event": "request_retry", "path": "/jobs/2949/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 66.922, "event": "progress", "known_keys": 5405, "states": {"cancelled": 600, "failed": 22, "queued": 4065, "running": 4, "succeeded": 715}, "kills": 32}
+{"elapsed_s": 66.984, "event": "worker_killed", "pid": 29100, "slot": 5, "jobs": [], "returncode": 1}
+{"elapsed_s": 68.984, "event": "worker_killed", "pid": 33740, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 69.203, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5578", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 69.891, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-6221", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 70.797, "event": "worker_killed", "pid": 29604, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 71.781, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3480", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 71.937, "event": "progress", "known_keys": 5892, "states": {"cancelled": 601, "failed": 23, "queued": 4512, "running": 3, "succeeded": 753}, "kills": 35}
+{"elapsed_s": 71.953, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3977", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 72.203, "event": "request_retry", "path": "/jobs/2949/cancel", "key": null, "status": 503, "error": null, "attempt": 1}
+{"elapsed_s": 72.906, "event": "worker_killed", "pid": 3208, "slot": 5, "jobs": [982], "returncode": 1}
+{"elapsed_s": 73.734, "event": "request_retry", "path": "/jobs/3209/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 74.859, "event": "worker_killed", "pid": 16580, "slot": 6, "jobs": [1031], "returncode": 1}
+{"elapsed_s": 75.891, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7028", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 76.922, "event": "progress", "known_keys": 6318, "states": {"cancelled": 604, "failed": 24, "queued": 4854, "running": 3, "succeeded": 833}, "kills": 37}
+{"elapsed_s": 77.016, "event": "worker_killed", "pid": 10996, "slot": 2, "jobs": [], "returncode": 1}
+{"elapsed_s": 77.031, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-6578", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 77.031, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8019", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 77.469, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-6997", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 77.734, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3480", "status": 503, "error": null, "attempt": 1}
+{"elapsed_s": 78.203, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3995", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 78.344, "event": "request_retry", "path": "/jobs/3224/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 79.219, "event": "worker_killed", "pid": 10976, "slot": 2, "jobs": [], "returncode": 1}
+{"elapsed_s": 79.578, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7188", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 81.234, "event": "worker_killed", "pid": 3944, "slot": 0, "jobs": [1063], "returncode": 1}
+{"elapsed_s": 81.375, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-6417", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 81.922, "event": "progress", "known_keys": 6893, "states": {"cancelled": 641, "failed": 25, "queued": 5367, "running": 3, "succeeded": 858}, "kills": 40}
+{"elapsed_s": 83.078, "event": "worker_killed", "pid": 19256, "slot": 5, "jobs": [1081], "returncode": 1}
+{"elapsed_s": 84.047, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7042", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 84.891, "event": "worker_killed", "pid": 12384, "slot": 5, "jobs": [1097], "returncode": 1}
+{"elapsed_s": 86.031, "event": "request_retry", "path": "/jobs/3404/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 86.734, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-6406", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 86.875, "event": "worker_killed", "pid": 8892, "slot": 0, "jobs": [1130], "returncode": 1}
+{"elapsed_s": 86.937, "event": "progress", "known_keys": 7354, "states": {"cancelled": 656, "failed": 26, "queued": 5767, "running": 5, "succeeded": 902}, "kills": 43}
+{"elapsed_s": 87.516, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4841", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 88.219, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7101", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 88.687, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-6414", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 89.0, "event": "worker_killed", "pid": 3264, "slot": 5, "jobs": [1131], "returncode": 1}
+{"elapsed_s": 90.094, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8756", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 90.203, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4296", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 90.922, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8355", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 90.937, "event": "worker_killed", "pid": 16524, "slot": 0, "jobs": [1140], "returncode": 1}
+{"elapsed_s": 91.703, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8277", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 91.922, "event": "progress", "known_keys": 7727, "states": {"cancelled": 758, "failed": 27, "queued": 6008, "running": 4, "succeeded": 931}, "kills": 45}
+{"elapsed_s": 92.891, "event": "worker_killed", "pid": 17088, "slot": 2, "jobs": [1171], "returncode": 1}
+{"elapsed_s": 92.922, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8879", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 93.469, "event": "request_retry", "path": "/jobs/3607/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 94.453, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7197", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 95.031, "event": "worker_killed", "pid": 13088, "slot": 6, "jobs": [1175], "returncode": 1}
+{"elapsed_s": 96.062, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8124", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 96.266, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-1780", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 96.828, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5771", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 96.937, "event": "progress", "known_keys": 8065, "states": {"cancelled": 972, "failed": 28, "queued": 6086, "running": 5, "succeeded": 974}, "kills": 47}
+{"elapsed_s": 97.047, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9152", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 97.141, "event": "worker_killed", "pid": 32076, "slot": 3, "jobs": [1215], "returncode": 1}
+{"elapsed_s": 98.969, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8913", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 99.156, "event": "worker_killed", "pid": 27456, "slot": 2, "jobs": [1249], "returncode": 1}
+{"elapsed_s": 99.312, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9522", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 100.344, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7197", "status": 503, "error": null, "attempt": 1}
+{"elapsed_s": 100.344, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-6622", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 101.25, "event": "worker_killed", "pid": 24700, "slot": 3, "jobs": [1331], "returncode": 1}
+{"elapsed_s": 101.953, "event": "progress", "known_keys": 8275, "states": {"cancelled": 1056, "failed": 31, "queued": 6106, "running": 7, "succeeded": 1076}, "kills": 50}
+{"elapsed_s": 102.172, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7354", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 103.172, "event": "worker_killed", "pid": 1344, "slot": 0, "jobs": [1357], "returncode": 1}
+{"elapsed_s": 103.969, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5336", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 105.203, "event": "worker_killed", "pid": 12412, "slot": 1, "jobs": [1420], "returncode": 1}
+{"elapsed_s": 105.266, "event": "request_retry", "path": "/jobs/5482/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 105.5, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9472", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 106.25, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8357", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 106.609, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-6798", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 106.953, "event": "progress", "known_keys": 8587, "states": {"cancelled": 1074, "failed": 33, "queued": 6318, "running": 5, "succeeded": 1158}, "kills": 52}
+{"elapsed_s": 107.234, "event": "worker_killed", "pid": 30208, "slot": 6, "jobs": [1448], "returncode": 1}
+{"elapsed_s": 108.109, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5947", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 108.328, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9265", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 109.359, "event": "worker_killed", "pid": 10200, "slot": 4, "jobs": [1490], "returncode": 1}
+{"elapsed_s": 109.5, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9762", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 111.297, "event": "worker_killed", "pid": 30016, "slot": 4, "jobs": [1560], "returncode": 1}
+{"elapsed_s": 111.984, "event": "progress", "known_keys": 8829, "states": {"cancelled": 1117, "failed": 35, "queued": 6404, "running": 7, "succeeded": 1266}, "kills": 55}
+{"elapsed_s": 112.422, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-7962", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 113.172, "event": "worker_killed", "pid": 10044, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 113.828, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-5947", "status": 503, "error": null, "attempt": 1}
+{"elapsed_s": 114.969, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9585", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 115.281, "event": "worker_killed", "pid": 24496, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 117.031, "event": "progress", "known_keys": 9098, "states": {"cancelled": 1146, "failed": 39, "queued": 6513, "running": 6, "succeeded": 1395}, "kills": 57}
+{"elapsed_s": 117.328, "event": "worker_killed", "pid": 8124, "slot": 3, "jobs": [1763], "returncode": 1}
+{"elapsed_s": 117.844, "event": "request_retry", "path": "/jobs/5800/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 118.172, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-6209", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 118.406, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-6974", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 119.5, "event": "worker_killed", "pid": 27272, "slot": 4, "jobs": [1832], "returncode": 1}
+{"elapsed_s": 121.391, "event": "worker_killed", "pid": 19416, "slot": 5, "jobs": [], "returncode": 1}
+{"elapsed_s": 121.687, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-6680", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 122.016, "event": "progress", "known_keys": 9214, "states": {"cancelled": 1204, "failed": 43, "queued": 6413, "running": 6, "succeeded": 1549}, "kills": 60}
+{"elapsed_s": 123.453, "event": "worker_killed", "pid": 8424, "slot": 6, "jobs": [2005], "returncode": 1}
+{"elapsed_s": 125.25, "event": "worker_killed", "pid": 31880, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 127.031, "event": "progress", "known_keys": 9394, "states": {"cancelled": 1376, "failed": 46, "queued": 6317, "running": 5, "succeeded": 1650}, "kills": 62}
+{"elapsed_s": 127.375, "event": "worker_killed", "pid": 25672, "slot": 6, "jobs": [2094], "returncode": 1}
+{"elapsed_s": 128.656, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-3957", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 128.766, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8621", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 129.531, "event": "worker_killed", "pid": 11076, "slot": 2, "jobs": [2150], "returncode": 1}
+{"elapsed_s": 131.734, "event": "worker_killed", "pid": 31156, "slot": 2, "jobs": [2316], "returncode": 1}
+{"elapsed_s": 132.062, "event": "progress", "known_keys": 9448, "states": {"cancelled": 1394, "failed": 53, "queued": 6152, "running": 7, "succeeded": 1842}, "kills": 65}
+{"elapsed_s": 133.641, "event": "request_retry", "path": "/jobs/7153/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 133.766, "event": "worker_killed", "pid": 30764, "slot": 1, "jobs": [2456], "returncode": 1}
+{"elapsed_s": 135.719, "event": "worker_killed", "pid": 14288, "slot": 7, "jobs": [2562], "returncode": 1}
+{"elapsed_s": 136.531, "event": "request_retry", "path": "/jobs/7163/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 137.078, "event": "progress", "known_keys": 9504, "states": {"cancelled": 1418, "failed": 59, "queued": 5952, "running": 9, "succeeded": 2066}, "kills": 67}
+{"elapsed_s": 137.312, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9710", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 137.766, "event": "worker_killed", "pid": 392, "slot": 1, "jobs": [2650], "returncode": 1}
+{"elapsed_s": 139.672, "event": "worker_killed", "pid": 30268, "slot": 4, "jobs": [2741], "returncode": 1}
+{"elapsed_s": 141.156, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8222", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 141.484, "event": "request_retry", "path": "/jobs/7281/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 141.484, "event": "worker_killed", "pid": 19352, "slot": 3, "jobs": [2808], "returncode": 1}
+{"elapsed_s": 142.078, "event": "progress", "known_keys": 9590, "states": {"cancelled": 1445, "failed": 62, "queued": 5831, "running": 8, "succeeded": 2244}, "kills": 70}
+{"elapsed_s": 143.734, "event": "worker_killed", "pid": 14732, "slot": 0, "jobs": [2942], "returncode": 1}
+{"elapsed_s": 145.812, "event": "worker_killed", "pid": 16572, "slot": 5, "jobs": [3012], "returncode": 1}
+{"elapsed_s": 147.078, "event": "progress", "known_keys": 9695, "states": {"cancelled": 1529, "failed": 69, "queued": 5669, "running": 6, "succeeded": 2422}, "kills": 72}
+{"elapsed_s": 147.875, "event": "worker_killed", "pid": 32112, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 149.719, "event": "worker_killed", "pid": 22884, "slot": 3, "jobs": [3205], "returncode": 1}
+{"elapsed_s": 151.562, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9326", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 151.891, "event": "worker_killed", "pid": 33248, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 152.109, "event": "progress", "known_keys": 9736, "states": {"cancelled": 1556, "failed": 74, "queued": 5479, "running": 7, "succeeded": 2620}, "kills": 75}
+{"elapsed_s": 153.797, "event": "worker_killed", "pid": 13960, "slot": 1, "jobs": [], "returncode": 1}
+{"elapsed_s": 155.922, "event": "worker_killed", "pid": 24832, "slot": 6, "jobs": [3517], "returncode": 1}
+{"elapsed_s": 156.109, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8312", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 157.125, "event": "progress", "known_keys": 9785, "states": {"cancelled": 1608, "failed": 81, "queued": 5268, "running": 8, "succeeded": 2820}, "kills": 77}
+{"elapsed_s": 157.969, "event": "worker_killed", "pid": 34356, "slot": 5, "jobs": [3611], "returncode": 1}
+{"elapsed_s": 159.672, "event": "request_retry", "path": "/jobs/8223/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 160.016, "event": "worker_killed", "pid": 23000, "slot": 5, "jobs": [3745], "returncode": 1}
+{"elapsed_s": 161.078, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9662", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 162.141, "event": "progress", "known_keys": 9802, "states": {"cancelled": 1623, "failed": 88, "queued": 5046, "running": 8, "succeeded": 3037}, "kills": 79}
+{"elapsed_s": 162.172, "event": "worker_killed", "pid": 22956, "slot": 5, "jobs": [3875], "returncode": 1}
+{"elapsed_s": 164.234, "event": "worker_killed", "pid": 33112, "slot": 3, "jobs": [3993], "returncode": 1}
+{"elapsed_s": 165.687, "event": "request_retry", "path": "/jobs/8273/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 166.203, "event": "worker_killed", "pid": 24076, "slot": 0, "jobs": [4095], "returncode": 1}
+{"elapsed_s": 166.984, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9662", "status": 503, "error": null, "attempt": 1}
+{"elapsed_s": 167.156, "event": "progress", "known_keys": 9827, "states": {"cancelled": 1628, "failed": 92, "queued": 4844, "running": 9, "succeeded": 3254}, "kills": 82}
+{"elapsed_s": 168.187, "event": "worker_killed", "pid": 23520, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 168.516, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8795", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 168.859, "event": "request_retry", "path": "/jobs/8316/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 170.047, "event": "worker_killed", "pid": 29884, "slot": 6, "jobs": [4288], "returncode": 1}
+{"elapsed_s": 172.156, "event": "progress", "known_keys": 9850, "states": {"cancelled": 1639, "failed": 98, "queued": 4627, "running": 7, "succeeded": 3479}, "kills": 84}
+{"elapsed_s": 172.266, "event": "worker_killed", "pid": 30956, "slot": 2, "jobs": [4442], "returncode": 1}
+{"elapsed_s": 174.469, "event": "worker_killed", "pid": 34084, "slot": 2, "jobs": [4615], "returncode": 1}
+{"elapsed_s": 174.672, "event": "request_retry", "path": "/jobs/8374/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 174.969, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-4456", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 175.406, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8904", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 176.391, "event": "worker_killed", "pid": 15720, "slot": 7, "jobs": [4669], "returncode": 1}
+{"elapsed_s": 177.172, "event": "progress", "known_keys": 9871, "states": {"cancelled": 1666, "failed": 106, "queued": 4360, "running": 8, "succeeded": 3731}, "kills": 87}
+{"elapsed_s": 178.484, "event": "worker_killed", "pid": 30704, "slot": 5, "jobs": [4830], "returncode": 1}
+{"elapsed_s": 180.406, "event": "worker_killed", "pid": 22004, "slot": 7, "jobs": [4952], "returncode": 1}
+{"elapsed_s": 181.047, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8907", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 182.187, "event": "progress", "known_keys": 9874, "states": {"cancelled": 1674, "failed": 110, "queued": 4117, "running": 6, "succeeded": 3967}, "kills": 89}
+{"elapsed_s": 182.297, "event": "worker_killed", "pid": 31532, "slot": 3, "jobs": [5017], "returncode": 1}
+{"elapsed_s": 184.531, "event": "worker_killed", "pid": 21576, "slot": 0, "jobs": [5196], "returncode": 1}
+{"elapsed_s": 185.391, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8984", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 186.609, "event": "worker_killed", "pid": 9132, "slot": 7, "jobs": [5284], "returncode": 1}
+{"elapsed_s": 187.25, "event": "progress", "known_keys": 9880, "states": {"cancelled": 1688, "failed": 115, "queued": 3850, "running": 8, "succeeded": 4219}, "kills": 92}
+{"elapsed_s": 188.734, "event": "worker_killed", "pid": 29012, "slot": 5, "jobs": [5475], "returncode": 1}
+{"elapsed_s": 189.203, "event": "request_retry", "path": "/jobs/8579/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 190.953, "event": "worker_killed", "pid": 18092, "slot": 4, "jobs": [5612], "returncode": 1}
+{"elapsed_s": 191.516, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9064", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 192.266, "event": "progress", "known_keys": 9892, "states": {"cancelled": 1734, "failed": 122, "queued": 3556, "running": 9, "succeeded": 4471}, "kills": 94}
+{"elapsed_s": 193.031, "event": "worker_killed", "pid": 29292, "slot": 5, "jobs": [5746], "returncode": 1}
+{"elapsed_s": 195.047, "event": "worker_killed", "pid": 29372, "slot": 7, "jobs": [5811], "returncode": 1}
+{"elapsed_s": 196.594, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8971", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 196.937, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9049", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 196.969, "event": "worker_killed", "pid": 14300, "slot": 4, "jobs": [5936], "returncode": 1}
+{"elapsed_s": 197.266, "event": "progress", "known_keys": 9939, "states": {"cancelled": 1779, "failed": 128, "queued": 3362, "running": 6, "succeeded": 4664}, "kills": 97}
+{"elapsed_s": 198.969, "event": "worker_killed", "pid": 6804, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 200.906, "event": "worker_killed", "pid": 19408, "slot": 1, "jobs": [6110], "returncode": 1}
+{"elapsed_s": 202.281, "event": "progress", "known_keys": 9956, "states": {"cancelled": 1815, "failed": 137, "queued": 3129, "running": 8, "succeeded": 4867}, "kills": 99}
+{"elapsed_s": 202.766, "event": "worker_killed", "pid": 29772, "slot": 7, "jobs": [6224], "returncode": 1}
+{"elapsed_s": 203.062, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9992", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 204.906, "event": "worker_killed", "pid": 10000, "slot": 3, "jobs": [6360], "returncode": 1}
+{"elapsed_s": 207.094, "event": "worker_killed", "pid": 4984, "slot": 6, "jobs": [6383], "returncode": 1}
+{"elapsed_s": 207.281, "event": "progress", "known_keys": 9964, "states": {"cancelled": 1839, "failed": 143, "queued": 2889, "running": 8, "succeeded": 5085}, "kills": 102}
+{"elapsed_s": 209.031, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2415", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 209.094, "event": "worker_killed", "pid": 13332, "slot": 1, "jobs": [6595], "returncode": 1}
+{"elapsed_s": 211.078, "event": "request_retry", "path": "/jobs/9381/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 211.078, "event": "request_retry", "path": "/jobs/8540/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 211.187, "event": "worker_killed", "pid": 21688, "slot": 4, "jobs": [6746], "returncode": 1}
+{"elapsed_s": 212.297, "event": "progress", "known_keys": 9967, "states": {"cancelled": 1839, "failed": 151, "queued": 2618, "running": 8, "succeeded": 5351}, "kills": 104}
+{"elapsed_s": 213.0, "event": "worker_killed", "pid": 19292, "slot": 5, "jobs": [], "returncode": 1}
+{"elapsed_s": 215.109, "event": "worker_killed", "pid": 7500, "slot": 2, "jobs": [6915], "returncode": 1}
+{"elapsed_s": 215.141, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-8176", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 217.047, "event": "worker_killed", "pid": 31228, "slot": 5, "jobs": [7143], "returncode": 1}
+{"elapsed_s": 217.312, "event": "progress", "known_keys": 9972, "states": {"cancelled": 1841, "failed": 159, "queued": 2355, "running": 7, "succeeded": 5610}, "kills": 107}
+{"elapsed_s": 219.094, "event": "worker_killed", "pid": 9272, "slot": 2, "jobs": [7292], "returncode": 1}
+{"elapsed_s": 221.0, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-9563", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 221.078, "event": "worker_killed", "pid": 16124, "slot": 2, "jobs": [7377], "returncode": 1}
+{"elapsed_s": 222.234, "event": "request_retry", "path": "/jobs/9390/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 222.344, "event": "progress", "known_keys": 9995, "states": {"cancelled": 1842, "failed": 165, "queued": 2124, "running": 7, "succeeded": 5857}, "kills": 109}
+{"elapsed_s": 223.219, "event": "worker_killed", "pid": 32864, "slot": 2, "jobs": [7524], "returncode": 1}
+{"elapsed_s": 224.937, "event": "request_retry", "path": "/jobs", "key": "seed-1-job-2530", "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 225.266, "event": "worker_killed", "pid": 28320, "slot": 5, "jobs": [7656], "returncode": 1}
+{"elapsed_s": 227.297, "event": "worker_killed", "pid": 28140, "slot": 2, "jobs": [7746], "returncode": 1}
+{"elapsed_s": 227.344, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1914, "failed": 169, "queued": 1843, "running": 7, "succeeded": 6067}, "kills": 112}
+{"elapsed_s": 229.328, "event": "worker_killed", "pid": 14416, "slot": 2, "jobs": [], "returncode": 1}
+{"elapsed_s": 231.406, "event": "worker_killed", "pid": 27284, "slot": 1, "jobs": [], "returncode": 1}
+{"elapsed_s": 232.391, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1962, "failed": 175, "queued": 1553, "running": 7, "succeeded": 6303}, "kills": 114}
+{"elapsed_s": 233.562, "event": "worker_killed", "pid": 16920, "slot": 2, "jobs": [8106], "returncode": 1}
+{"elapsed_s": 234.328, "event": "request_retry", "path": "/jobs/9868/cancel", "key": null, "status": 503, "error": null, "attempt": 0}
+{"elapsed_s": 235.594, "event": "worker_killed", "pid": 33260, "slot": 7, "jobs": [8236], "returncode": 1}
+{"elapsed_s": 237.391, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 184, "queued": 1317, "running": 7, "succeeded": 6525}, "kills": 116}
+{"elapsed_s": 237.766, "event": "worker_killed", "pid": 13324, "slot": 1, "jobs": [], "returncode": 1}
+{"elapsed_s": 239.687, "event": "worker_killed", "pid": 31868, "slot": 7, "jobs": [8446], "returncode": 1}
+{"elapsed_s": 241.891, "event": "worker_killed", "pid": 10572, "slot": 2, "jobs": [8647], "returncode": 1}
+{"elapsed_s": 242.422, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 189, "queued": 1053, "running": 8, "succeeded": 6783}, "kills": 119}
+{"elapsed_s": 243.969, "event": "worker_killed", "pid": 8480, "slot": 4, "jobs": [8747], "returncode": 1}
+{"elapsed_s": 246.141, "event": "worker_killed", "pid": 12272, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 247.437, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 197, "queued": 788, "running": 5, "succeeded": 7043}, "kills": 121}
+{"elapsed_s": 247.969, "event": "worker_killed", "pid": 20208, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 250.141, "event": "worker_killed", "pid": 27868, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 252.125, "event": "worker_killed", "pid": 34676, "slot": 4, "jobs": [9259], "returncode": 1}
+{"elapsed_s": 252.453, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 204, "queued": 534, "running": 8, "succeeded": 7287}, "kills": 124}
+{"elapsed_s": 254.234, "event": "worker_killed", "pid": 15916, "slot": 0, "jobs": [9435], "returncode": 1}
+{"elapsed_s": 256.062, "event": "worker_killed", "pid": 25096, "slot": 2, "jobs": [9507], "returncode": 1}
+{"elapsed_s": 257.484, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 210, "queued": 286, "running": 7, "succeeded": 7530}, "kills": 126}
+{"elapsed_s": 257.937, "event": "worker_killed", "pid": 3488, "slot": 7, "jobs": [9650], "returncode": 1}
+{"elapsed_s": 259.922, "event": "worker_killed", "pid": 21284, "slot": 1, "jobs": [9787], "returncode": 1}
+{"elapsed_s": 261.984, "event": "worker_killed", "pid": 22400, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 262.5, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "queued": 31, "running": 8, "succeeded": 7776}, "kills": 129}
+{"elapsed_s": 264.141, "event": "worker_killed", "pid": 16936, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 266.297, "event": "worker_killed", "pid": 29744, "slot": 1, "jobs": [], "returncode": 1}
+{"elapsed_s": 267.547, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 131}
+{"elapsed_s": 268.234, "event": "worker_killed", "pid": 34288, "slot": 5, "jobs": [], "returncode": 1}
+{"elapsed_s": 270.187, "event": "worker_killed", "pid": 33928, "slot": 1, "jobs": [], "returncode": 1}
+{"elapsed_s": 272.062, "event": "worker_killed", "pid": 19336, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 272.578, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 134}
+{"elapsed_s": 274.141, "event": "worker_killed", "pid": 28508, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 276.141, "event": "worker_killed", "pid": 25008, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 277.578, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 136}
+{"elapsed_s": 278.141, "event": "worker_killed", "pid": 28400, "slot": 1, "jobs": [], "returncode": 1}
+{"elapsed_s": 279.953, "event": "worker_killed", "pid": 27940, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 282.078, "event": "worker_killed", "pid": 1688, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 282.594, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 139}
+{"elapsed_s": 283.969, "event": "worker_killed", "pid": 1976, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 285.828, "event": "worker_killed", "pid": 13276, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 287.609, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 141}
+{"elapsed_s": 288.031, "event": "worker_killed", "pid": 17196, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 290.109, "event": "worker_killed", "pid": 26800, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 292.187, "event": "worker_killed", "pid": 13588, "slot": 1, "jobs": [], "returncode": 1}
+{"elapsed_s": 292.594, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 144}
+{"elapsed_s": 294.094, "event": "worker_killed", "pid": 11784, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 296.062, "event": "worker_killed", "pid": 33988, "slot": 2, "jobs": [], "returncode": 1}
+{"elapsed_s": 297.609, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 146}
+{"elapsed_s": 297.906, "event": "worker_killed", "pid": 21412, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 299.969, "event": "worker_killed", "pid": 9052, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 301.969, "event": "worker_killed", "pid": 28436, "slot": 1, "jobs": [], "returncode": 1}
+{"elapsed_s": 302.594, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 149}
+{"elapsed_s": 304.0, "event": "worker_killed", "pid": 15120, "slot": 2, "jobs": [], "returncode": 1}
+{"elapsed_s": 306.266, "event": "worker_killed", "pid": 13304, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 307.594, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 151}
+{"elapsed_s": 308.172, "event": "worker_killed", "pid": 33832, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 310.312, "event": "worker_killed", "pid": 34672, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 312.5, "event": "worker_killed", "pid": 25472, "slot": 1, "jobs": [], "returncode": 1}
+{"elapsed_s": 312.609, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 154}
+{"elapsed_s": 314.562, "event": "worker_killed", "pid": 11656, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 316.609, "event": "worker_killed", "pid": 28180, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 317.625, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 156}
+{"elapsed_s": 318.547, "event": "worker_killed", "pid": 16688, "slot": 2, "jobs": [], "returncode": 1}
+{"elapsed_s": 320.734, "event": "worker_killed", "pid": 27496, "slot": 5, "jobs": [], "returncode": 1}
+{"elapsed_s": 322.687, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 158}
+{"elapsed_s": 322.734, "event": "worker_killed", "pid": 24824, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 324.734, "event": "worker_killed", "pid": 9028, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 326.594, "event": "worker_killed", "pid": 34628, "slot": 2, "jobs": [], "returncode": 1}
+{"elapsed_s": 327.703, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 161}
+{"elapsed_s": 328.594, "event": "worker_killed", "pid": 18148, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 330.578, "event": "worker_killed", "pid": 29548, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 332.687, "event": "worker_killed", "pid": 13068, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 332.703, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 164}
+{"elapsed_s": 334.578, "event": "worker_killed", "pid": 29920, "slot": 2, "jobs": [], "returncode": 1}
+{"elapsed_s": 336.562, "event": "worker_killed", "pid": 29316, "slot": 1, "jobs": [], "returncode": 1}
+{"elapsed_s": 337.703, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 166}
+{"elapsed_s": 338.75, "event": "worker_killed", "pid": 25404, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 340.922, "event": "worker_killed", "pid": 15208, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 342.703, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 168}
+{"elapsed_s": 343.078, "event": "worker_killed", "pid": 21348, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 345.016, "event": "worker_killed", "pid": 9472, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 347.0, "event": "worker_killed", "pid": 7904, "slot": 5, "jobs": [], "returncode": 1}
+{"elapsed_s": 347.734, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 171}
+{"elapsed_s": 349.078, "event": "worker_killed", "pid": 14236, "slot": 2, "jobs": [], "returncode": 1}
+{"elapsed_s": 350.906, "event": "worker_killed", "pid": 12480, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 352.781, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 173}
+{"elapsed_s": 352.844, "event": "worker_killed", "pid": 2468, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 354.937, "event": "worker_killed", "pid": 9492, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 356.937, "event": "worker_killed", "pid": 28060, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 357.812, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 176}
+{"elapsed_s": 359.047, "event": "worker_killed", "pid": 5976, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 361.219, "event": "worker_killed", "pid": 14344, "slot": 2, "jobs": [], "returncode": 1}
+{"elapsed_s": 362.812, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 178}
+{"elapsed_s": 363.281, "event": "worker_killed", "pid": 14660, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 365.453, "event": "worker_killed", "pid": 6172, "slot": 2, "jobs": [], "returncode": 1}
+{"elapsed_s": 367.734, "event": "worker_killed", "pid": 22320, "slot": 3, "jobs": [], "returncode": 1}
+{"elapsed_s": 367.812, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 181}
+{"elapsed_s": 369.609, "event": "worker_killed", "pid": 28048, "slot": 1, "jobs": [], "returncode": 1}
+{"elapsed_s": 371.547, "event": "worker_killed", "pid": 15072, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 372.812, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 183}
+{"elapsed_s": 373.594, "event": "worker_killed", "pid": 33352, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 375.687, "event": "worker_killed", "pid": 13164, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 377.797, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 185}
+{"elapsed_s": 377.859, "event": "worker_killed", "pid": 8196, "slot": 0, "jobs": [], "returncode": 1}
+{"elapsed_s": 380.031, "event": "worker_killed", "pid": 34584, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 382.0, "event": "worker_killed", "pid": 33984, "slot": 1, "jobs": [], "returncode": 1}
+{"elapsed_s": 382.844, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 188}
+{"elapsed_s": 383.906, "event": "worker_killed", "pid": 8236, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 385.969, "event": "worker_killed", "pid": 32460, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 387.844, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 190}
+{"elapsed_s": 388.047, "event": "worker_killed", "pid": 22380, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 390.172, "event": "worker_killed", "pid": 18408, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 392.25, "event": "worker_killed", "pid": 22812, "slot": 6, "jobs": [], "returncode": 1}
+{"elapsed_s": 392.859, "event": "progress", "known_keys": 10000, "states": {"cancelled": 1967, "failed": 218, "succeeded": 7815}, "kills": 193}
+{"elapsed_s": 394.187, "event": "worker_killed", "pid": 4396, "slot": 4, "jobs": [], "returncode": 1}
+{"elapsed_s": 396.359, "event": "worker_killed", "pid": 30832, "slot": 7, "jobs": [], "returncode": 1}
+{"elapsed_s": 397.406, "event": "submissions_done", "keys": 10000}
+{"elapsed_s": 398.125, "event": "result", "jobs": 10000, "states": {"failed": 218, "succeeded": 7815, "cancelled": 1967}, "effects": 8033, "attempts": 8364, "jobs_retried": 303, "kills": 195, "kills_with_observed_claim": 94, "accepted_cancels": 1967, "late_cancels": 33, "http_statuses": {"201": 10000, "409": 33, "200": 6997, "503": 153}, "request_retries": 153, "latency_ms": {"p50": 16.0, "p95": 406.0, "p99": 5578.0, "max": 6078.0}, "invariants": "PASS"}

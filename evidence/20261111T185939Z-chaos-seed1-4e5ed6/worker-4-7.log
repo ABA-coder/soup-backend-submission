@@ -1,0 +1,14 @@
+{"event": "worker_started", "pid": 30240, "worker": "30240-eaf285345b154dd38de79b4df7eed660", "lease_ms": 1500}
+{"event": "claimed", "pid": 30240, "job_id": 608, "token": 1}
+{"event": "finished", "pid": 30240, "job_id": 608, "token": 1}
+{"event": "claimed", "pid": 30240, "job_id": 609, "token": 1}
+{"event": "finished", "pid": 30240, "job_id": 609, "token": 1}
+{"event": "claimed", "pid": 30240, "job_id": 610, "token": 1}
+{"event": "finished", "pid": 30240, "job_id": 610, "token": 1}
+{"event": "claimed", "pid": 30240, "job_id": 611, "token": 1}
+{"event": "finished", "pid": 30240, "job_id": 611, "token": 1}
+{"event": "claimed", "pid": 30240, "job_id": 613, "token": 1}
+{"event": "finished", "pid": 30240, "job_id": 613, "token": 1}
+{"event": "claimed", "pid": 30240, "job_id": 639, "token": 1}
+{"event": "finished", "pid": 30240, "job_id": 639, "token": 1}
+{"event": "claimed", "pid": 30240, "job_id": 642, "token": 1}

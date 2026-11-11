@@ -1,0 +1,28 @@
+{
+  "jobs": 3000,
+  "states": {
+    "failed": 82,
+    "succeeded": 2918
+  },
+  "effects": 3000,
+  "attempts": 3066,
+  "jobs_retried": 60,
+  "kills": 0,
+  "kills_with_observed_claim": 0,
+  "accepted_cancels": 0,
+  "late_cancels": 0,
+  "http_statuses": {
+    "201": 3000,
+    "503": 84,
+    "200": 23
+  },
+  "request_retries": 84,
+  "latency_ms": {
+    "p50": 46.0,
+    "p95": 3453.0,
+    "p99": 5922.0,
+    "max": 6046.0
+  },
+  "elapsed_s": 85.672,
+  "invariants": "PASS"
+}

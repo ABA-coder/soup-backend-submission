@@ -1,0 +1,22 @@
+{"event": "worker_started", "pid": 17088, "worker": "17088-b94e8cd0a5314b6bafddfdb8c6be28bf", "lease_ms": 1500}
+{"event": "claimed", "pid": 17088, "job_id": 1061, "token": 1}
+{"event": "fenced", "pid": 17088, "job_id": 1061, "token": 1}
+{"event": "claimed", "pid": 17088, "job_id": 1070, "token": 1}
+{"event": "finished", "pid": 17088, "job_id": 1070, "token": 1}
+{"event": "claimed", "pid": 17088, "job_id": 1071, "token": 1}
+{"event": "finished", "pid": 17088, "job_id": 1071, "token": 1}
+{"event": "claimed", "pid": 17088, "job_id": 1088, "token": 1}
+{"event": "finished", "pid": 17088, "job_id": 1088, "token": 1}
+{"event": "claimed", "pid": 17088, "job_id": 1089, "token": 1}
+{"event": "finished", "pid": 17088, "job_id": 1089, "token": 1}
+{"event": "claimed", "pid": 17088, "job_id": 1092, "token": 1}
+{"event": "finished", "pid": 17088, "job_id": 1092, "token": 1}
+{"event": "claimed", "pid": 17088, "job_id": 1093, "token": 1}
+{"event": "finished", "pid": 17088, "job_id": 1093, "token": 1}
+{"event": "claimed", "pid": 17088, "job_id": 1094, "token": 1}
+{"event": "finished", "pid": 17088, "job_id": 1094, "token": 1}
+{"event": "claimed", "pid": 17088, "job_id": 1096, "token": 1}
+{"event": "fenced", "pid": 17088, "job_id": 1096, "token": 1}
+{"event": "claimed", "pid": 17088, "job_id": 1117, "token": 1}
+{"event": "database_busy", "pid": 17088}
+{"event": "claimed", "pid": 17088, "job_id": 1171, "token": 1}

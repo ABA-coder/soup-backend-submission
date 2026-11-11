@@ -1,0 +1,6 @@
+{
+  "invariants": "FAIL",
+  "error": "AssertionError('POST seed-1-job-3918: 0 None')",
+  "kills": 38,
+  "elapsed_s": 78.781
+}
