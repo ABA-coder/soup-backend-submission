@@ -98,6 +98,12 @@ The independent oracle reconciles every intended key and payload, POST response 
 
 The harness does not simulate power failure, disk corruption/full disk, API/database restarts during the large run, malicious requests, network partitions, external effects, months of data growth, multi-host operation, or every possible scheduler interleaving. Separate targeted tests cover commit-boundary kills, expired zombies, clock jumps, long-job heartbeats, and cancellation races. Cancellation of actual GPU jobs and real training outputs would need a different execution adapter.
 
-See [AI_USAGE.md](AI_USAGE.md) for the actual use of AI and [SUBMISSION_EMAIL.txt](SUBMISSION_EMAIL.txt) for a draft reply. No submission email has been sent.
+See [AI_USAGE.md](AI_USAGE.md) for the AI disclosure supplied in the submitted ZIP.
 
-The distribution ZIP includes a `repository.bundle` beside this source folder. To restore Git history in a separate checkout: `git clone repository.bundle queue-with-history`. The initial commit contains the design before implementation. Database snapshots live in the ZIP, while the bundle tracks source and textual evidence. `SHA256SUMS.txt` in the ZIP covers the packaged files and bundle.
+## Original submission archive
+
+[Download the original submission ZIP](https://github.com/ABA-coder/soup-backend-submission/raw/refs/heads/main/submission/soup-backend-submission.zip). Its SHA-256 digest is recorded in [submission/SHA256SUMS.txt](submission/SHA256SUMS.txt). The archive is preserved byte-for-byte, including the database snapshots, failed-run evidence, and original Git bundle.
+
+The distribution ZIP includes a `repository.bundle` beside its source folder. To restore its original Git history in a separate checkout: `git clone repository.bundle queue-with-history`. This public repository also preserves that history: the initial commit contains the design before implementation. Database snapshots live in the ZIP, while the source tree tracks code and textual evidence.
+
+The supplied ZIP's internal `SHA256SUMS.txt` predates an edit to `AI_USAGE.md` and removal of `SUBMISSION_EMAIL.txt`; those two entries do not match the archive contents. All other 335 entries verify. The publication commit applies those supplied-file changes to the bundled history and adds this download information; it does not change the implementation or recorded experiment results.
